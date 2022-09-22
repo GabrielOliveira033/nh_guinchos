@@ -179,7 +179,7 @@
     >
       <div class="row">
           <q-btn
-            class="col-6"
+            class="col-6 whatsapp"
             icon="mdi-whatsapp"
             text-color="white"
             stack
@@ -188,7 +188,6 @@
             rel="noopener noreferrer"
             href="https://wa.me/5551997188828"
             label="WhatsApp"
-            style=" background-color: #25d366"
           />
           <q-btn
             class="col-6"
@@ -257,5 +256,9 @@ a {
   color: black;
   text-align: center;
 
+}
+
+.whatsapp {
+  background-color: #25d366;
 }
 </style>
