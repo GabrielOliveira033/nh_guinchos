@@ -56,12 +56,11 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
-    <div class="q-pa-md row" id="services">
+    <div class="q-px-md q-pt-md row" id="services">
       <div class="col-12 text-h4 text-center">
         Serviços
-        <q-separator size="2px" color="red"/>
+        <q-separator size="2px" color="red" class="q-my-md"/>
       </div>
-
       <div class="column col-xs-12 col-sm-6 col-md-3 flex flex-center q-pa-md">
         <q-icon name="mdi-tow-truck" size="4rem" color="red"/>
         <h5 class="text-center">Reboque</h5>
@@ -79,11 +78,12 @@
         <h5 class="text-center">Guincho 24 Horas</h5>
       </div>
     </div>
-    <div class="q-pa-md">
+
+    <div class="q-px-md">
       <div class="col-12">
-        <q-separator size="2px" color="red"/>
         <h4 class="text-center">
           Galeria
+          <q-separator size="2px" color="red" class="q-mt-md"/>
         </h4>
       </div>
 
