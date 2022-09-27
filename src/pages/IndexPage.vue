@@ -92,43 +92,31 @@
         animated
         v-model="slide"
         infinite
+
         :autoplay="autoplay"
         height="400px"
         class="gt-sm"
       >
-        <q-carousel-slide :name="1" class="column no-wrap gt-sm">
+        <q-carousel-slide v-for="slide in slides" :key="slide.id" :name="slide.id" class="column no-wrap">
           <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-            <q-img class="rounded-borders col-6 full-height" src="~assets/guinch01.png"/>
-            <q-img class="rounded-borders col-6 full-height" src="~assets/guinch02.jpeg"/>
-          </div>
-        </q-carousel-slide>
-        <q-carousel-slide :name="2" class="column no-wrap gt-sm">
-          <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-            <q-img class="rounded-borders col-6 full-height" src="~assets/guinch02.jpeg" />
-            <q-img class="rounded-borders col-6 full-height" src="~assets/guinch03.jpeg" />
-          </div>
-        </q-carousel-slide>
-        <q-carousel-slide :name="3" class="column no-wrap gt-sm">
-          <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-            <q-img class="rounded-borders col-6 full-height" src="~assets/guinch03.jpeg" />
-            <q-img class="rounded-borders col-6 full-height" src="~assets/guinch01.png" />
+            <q-img class="rounded-borders col-6 full-height" :src="slide.url"/>
+            <q-img class="rounded-borders col-6 full-height" :src="slide.url"/>
           </div>
         </q-carousel-slide>
       </q-carousel>
 
       <q-carousel
-        swipeable
         animated
-        v-model="slide"
+        swipeable
         infinite
+        v-model="slide"
         :autoplay="autoplay"
         height="400px"
         class="lt-sm"
       >
-        <q-carousel-slide :name="1" img-src="~assets/guinch01.png" />
-        <q-carousel-slide :name="2" img-src="~assets/guinch02.jpeg" />
-        <q-carousel-slide :name="3" img-src="~assets/guinch03.jpeg" />
+        <q-carousel-slide v-for="slide in slides" :key="slide.id" :name="slide.id" :img-src="slide.url" ></q-carousel-slide>
       </q-carousel>
+
     </div>
 
     <div class="row flex items-start" id="contacts">
@@ -144,7 +132,7 @@
             </div>
             <div class="row q-pa-xs text-center">
               <q-icon name="mail" class="row q-mr-xs" style="font-size:20px;"/>
-              <p>nh_guinchos@gmail.com</p>
+              <p>guinchonh@gmail.com</p>
             </div>
           </div>
 
@@ -236,12 +224,64 @@ import { defineComponent, ref } from 'vue'
 export default defineComponent({
   name: 'IndexPage',
   setup () {
+    const slides = [
+      { id: 1, url: 'src/assets/new_carrousel/guincho1.png' },
+      { id: 2, url: 'src/assets/new_carrousel/guincho2.png' },
+      { id: 3, url: 'src/assets/new_carrousel/guincho3.png' },
+      { id: 4, url: 'src/assets/new_carrousel/guincho4.png' },
+      { id: 5, url: 'src/assets/new_carrousel/guincho5.png' },
+      { id: 6, url: 'src/assets/new_carrousel/guincho6.png' },
+      { id: 7, url: 'src/assets/new_carrousel/guincho7.png' },
+      { id: 8, url: 'src/assets/new_carrousel/guincho8.png' },
+      { id: 9, url: 'src/assets/new_carrousel/guincho9.png' },
+      { id: 10, url: 'src/assets/new_carrousel/guincho10.png' },
+      { id: 11, url: 'src/assets/new_carrousel/guincho11.png' },
+      { id: 12, url: 'src/assets/new_carrousel/guincho12.png' },
+      { id: 13, url: 'src/assets/new_carrousel/guincho13.png' },
+      { id: 14, url: 'src/assets/new_carrousel/guincho14.png' },
+      { id: 15, url: 'src/assets/new_carrousel/guincho15.png' },
+      { id: 16, url: 'src/assets/new_carrousel/guincho16.png' },
+      { id: 17, url: 'src/assets/new_carrousel/guincho17.png' },
+      { id: 18, url: 'src/assets/new_carrousel/guincho18.png' },
+      { id: 19, url: 'src/assets/new_carrousel/guincho19.png' },
+      { id: 20, url: 'src/assets/new_carrousel/guincho20.png' },
+      { id: 21, url: 'src/assets/new_carrousel/guincho21.png' },
+      { id: 22, url: 'src/assets/new_carrousel/guincho22.png' },
+      { id: 23, url: 'src/assets/new_carrousel/guincho23.png' }
+    ]
+
     return {
       emailDialog: ref(false),
       carrouselTop: ref(1),
       slide: ref(1),
       phone: ref(null),
-      autoplay: ref(true)
+      autoplay: ref(true),
+      slides,
+      carrouselImg: [
+        'src/assets/new_carrousel/guincho1.png',
+        'src/assets/new_carrousel/guincho2.png',
+        'src/assets/new_carrousel/guincho3.png',
+        'src/assets/new_carrousel/guincho4.png',
+        'src/assets/new_carrousel/guincho5.png',
+        'src/assets/new_carrousel/guincho6.png',
+        'src/assets/new_carrousel/guincho7.png',
+        'src/assets/new_carrousel/guincho8.png',
+        'src/assets/new_carrousel/guincho9.png',
+        'src/assets/new_carrousel/guincho10.png',
+        'src/assets/new_carrousel/guincho11.png',
+        'src/assets/new_carrousel/guincho12.png',
+        'src/assets/new_carrousel/guincho13.png',
+        'src/assets/new_carrousel/guincho14.png',
+        'src/assets/new_carrousel/guincho15.png',
+        'src/assets/new_carrousel/guincho16.png',
+        'src/assets/new_carrousel/guincho17.png',
+        'src/assets/new_carrousel/guincho18.png',
+        'src/assets/new_carrousel/guincho19.png',
+        'src/assets/new_carrousel/guincho20.png',
+        'src/assets/new_carrousel/guincho21.png',
+        'src/assets/new_carrousel/guincho22.png',
+        'src/assets/new_carrousel/guincho23.png'
+      ]
     }
   },
   components: {
