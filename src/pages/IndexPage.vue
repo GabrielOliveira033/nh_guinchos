@@ -256,32 +256,7 @@ export default defineComponent({
       slide: ref(1),
       phone: ref(null),
       autoplay: ref(true),
-      slides,
-      carrouselImg: [
-        'src/assets/new_carrousel/guincho1.png',
-        'src/assets/new_carrousel/guincho2.png',
-        'src/assets/new_carrousel/guincho3.png',
-        'src/assets/new_carrousel/guincho4.png',
-        'src/assets/new_carrousel/guincho5.png',
-        'src/assets/new_carrousel/guincho6.png',
-        'src/assets/new_carrousel/guincho7.png',
-        'src/assets/new_carrousel/guincho8.png',
-        'src/assets/new_carrousel/guincho9.png',
-        'src/assets/new_carrousel/guincho10.png',
-        'src/assets/new_carrousel/guincho11.png',
-        'src/assets/new_carrousel/guincho12.png',
-        'src/assets/new_carrousel/guincho13.png',
-        'src/assets/new_carrousel/guincho14.png',
-        'src/assets/new_carrousel/guincho15.png',
-        'src/assets/new_carrousel/guincho16.png',
-        'src/assets/new_carrousel/guincho17.png',
-        'src/assets/new_carrousel/guincho18.png',
-        'src/assets/new_carrousel/guincho19.png',
-        'src/assets/new_carrousel/guincho20.png',
-        'src/assets/new_carrousel/guincho21.png',
-        'src/assets/new_carrousel/guincho22.png',
-        'src/assets/new_carrousel/guincho23.png'
-      ]
+      slides
     }
   },
   components: {
