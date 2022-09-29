@@ -92,31 +92,25 @@
         animated
         v-model="slide"
         infinite
-
+        thumbnails
         :autoplay="autoplay"
-        height="400px"
-        class="gt-sm"
-      >
-        <q-carousel-slide v-for="slide in slides" :key="slide.id" :name="slide.id" class="column no-wrap">
-          <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
-            <q-img class="rounded-borders col-6 full-height" :src="slide.url"/>
-            <q-img class="rounded-borders col-6 full-height" :src="slide.url"/>
-          </div>
-        </q-carousel-slide>
-      </q-carousel>
 
+      >
+        <q-carousel-slide v-for="slide in slides" :key="slide.id" :name="slide.id" :img-src="slide.url" class="column no-wrap"/>
+      </q-carousel>
+      <!--
       <q-carousel
         animated
         swipeable
         infinite
         v-model="slide"
         :autoplay="autoplay"
-        height="400px"
+        max-height="720px"
         class="lt-sm"
       >
         <q-carousel-slide v-for="slide in slides" :key="slide.id" :name="slide.id" :img-src="slide.url" ></q-carousel-slide>
       </q-carousel>
-
+    -->
     </div>
 
     <div class="row flex items-start" id="contacts">
@@ -234,20 +228,18 @@ export default defineComponent({
       { id: 7, url: 'src/assets/new_carrousel/guincho7.png' },
       { id: 8, url: 'src/assets/new_carrousel/guincho8.png' },
       { id: 9, url: 'src/assets/new_carrousel/guincho9.png' },
-      { id: 10, url: 'src/assets/new_carrousel/guincho10.png' },
+      { id: 10, url: 'src/assets/new_carrousel/guincho22.png' },
       { id: 11, url: 'src/assets/new_carrousel/guincho11.png' },
       { id: 12, url: 'src/assets/new_carrousel/guincho12.png' },
       { id: 13, url: 'src/assets/new_carrousel/guincho13.png' },
       { id: 14, url: 'src/assets/new_carrousel/guincho14.png' },
       { id: 15, url: 'src/assets/new_carrousel/guincho15.png' },
-      { id: 16, url: 'src/assets/new_carrousel/guincho16.png' },
+      { id: 16, url: 'src/assets/new_carrousel/guincho23.png' },
       { id: 17, url: 'src/assets/new_carrousel/guincho17.png' },
       { id: 18, url: 'src/assets/new_carrousel/guincho18.png' },
       { id: 19, url: 'src/assets/new_carrousel/guincho19.png' },
       { id: 20, url: 'src/assets/new_carrousel/guincho20.png' },
-      { id: 21, url: 'src/assets/new_carrousel/guincho21.png' },
-      { id: 22, url: 'src/assets/new_carrousel/guincho22.png' },
-      { id: 23, url: 'src/assets/new_carrousel/guincho23.png' }
+      { id: 21, url: 'src/assets/atendimento.jpeg' }
     ]
 
     return {
