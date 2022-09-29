@@ -96,7 +96,27 @@
         :autoplay="autoplay"
 
       >
-        <q-carousel-slide v-for="slide in slides" :key="slide.id" :name="slide.id" :img-src="slide.url" class="column no-wrap"/>
+        <!--<q-carousel-slide v-for="slide in slides" :key="slide.id" :name="slide.id" :img-src="slide.url" class="column no-wrap"/>-->
+        <q-carousel-slide :name="1" img-src="~assets/new_carrousel/guincho1.png"/>
+        <q-carousel-slide :name="2" img-src="~assets/new_carrousel/guincho2.png"/>
+        <q-carousel-slide :name="3" img-src="~assets/new_carrousel/guincho3.png"/>
+        <q-carousel-slide :name="4" img-src="~assets/new_carrousel/guincho4.png"/>
+        <q-carousel-slide :name="5" img-src="~assets/new_carrousel/guincho5.png"/>
+        <q-carousel-slide :name="6" img-src="~assets/new_carrousel/guincho6.png"/>
+        <q-carousel-slide :name="7" img-src="~assets/new_carrousel/guincho7.png"/>
+        <q-carousel-slide :name="8" img-src="~assets/new_carrousel/guincho8.png"/>
+        <q-carousel-slide :name="9" img-src="~assets/new_carrousel/guincho9.png"/>
+        <q-carousel-slide :name="10" img-src="~assets/new_carrousel/guincho22.png"/>
+        <q-carousel-slide :name="11" img-src="~assets/new_carrousel/guincho11.png"/>
+        <q-carousel-slide :name="12" img-src="~assets/new_carrousel/guincho12.png"/>
+        <q-carousel-slide :name="13" img-src="~assets/new_carrousel/guincho13.png"/>
+        <q-carousel-slide :name="14" img-src="~assets/new_carrousel/guincho14.png"/>
+        <q-carousel-slide :name="15" img-src="~assets/new_carrousel/guincho15.png"/>
+        <q-carousel-slide :name="16" img-src="~assets/new_carrousel/guincho23.png"/>
+        <q-carousel-slide :name="17" img-src="~assets/new_carrousel/guincho17.png"/>
+        <q-carousel-slide :name="18" img-src="~assets/new_carrousel/guincho18.png"/>
+        <q-carousel-slide :name="19" img-src="~assets/new_carrousel/guincho19.png"/>
+        <q-carousel-slide :name="20" img-src="~assets/new_carrousel/guincho20.png"/>
       </q-carousel>
       <!--
       <q-carousel
