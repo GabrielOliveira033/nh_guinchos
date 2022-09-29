@@ -80,11 +80,11 @@
     </div>
 
     <div class="q-px-md">
-      <div class="col-12">
-        <h4 class="text-center">
+      <div class="col-12 text-h4 text-center">
+
           Galeria
-          <q-separator size="2px" color="red" class="q-mt-md"/>
-        </h4>
+          <q-separator size="2px" color="red" class="q-my-md"/>
+
       </div>
 
       <q-carousel
@@ -136,8 +136,8 @@
     <div class="row flex items-start" id="contacts">
       <div class="col-xs-12 col-sm-12 col-md-12 flex flex-center">
         <div class="row">
-          <div class="col-12">
-            <h4 class="text-center">Contatos</h4>
+          <div class="col-12 text-h4 text-center q-my-md">
+            Contatos
           </div>
           <div class="row col-xs-12 col-sm-12 col-md-12 justify-around">
             <div class="row q-pa-xs text-center">
