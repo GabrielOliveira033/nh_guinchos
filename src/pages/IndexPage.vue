@@ -56,6 +56,16 @@
         </q-carousel-slide>
       </q-carousel>
     </div>
+
+    <div class="bg-red text-center text-weight-bolder flex flex-center q-pa-xs" style="font-size: 4vw;">
+      <div class="text-white">
+        Não somos depósito do Detran e
+      </div>
+      <div class="text-white">
+       não realizamos remoções para guarda municipal e brigada militar
+      </div>
+    </div>
+
     <div class="q-px-md q-pt-md row" id="services">
       <div class="col-12 text-h4 text-center">
         Serviços
